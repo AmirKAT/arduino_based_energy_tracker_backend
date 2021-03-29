@@ -35,10 +35,10 @@ router.post('/', async (req, res) => {
 });
 // Schema Validation 
 const energyUsageSchemaValidation = Joi.object({
-    id: Joi.number().required(),
-    Kwh: Joi.number().required(),
+    id: Joi.string().required(),
+    Kwh: Joi.string().required(),
     date: Joi.string().required().max(300),
-    price: Joi.number().required(),
+    price: Joi.string().required(),
 
 });
 module.exports = router;

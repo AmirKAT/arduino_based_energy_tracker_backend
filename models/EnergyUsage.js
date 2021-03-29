@@ -6,11 +6,11 @@ const EnergyUsageSchema = mongoose.Schema({
         required: true
     },
     Kwh: {
-        type: Number,
+        type: String,
         required: true,
     },
     price: {
-        type: Number,
+        type: String,
         required: true
     },
 
